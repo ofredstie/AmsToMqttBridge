@@ -124,8 +124,8 @@ struct ConfigObject83 {
 	char mqttClientId[32];
 	char mqttPublishTopic[64];
 	char mqttSubscribeTopic[64];
-	char mqttUser[64];
-	char mqttPassword[64];
+	char mqttUser[128];
+	char mqttPassword[256];
 	uint8_t mqttPayloadFormat;
 	bool mqttSsl;
 	uint8_t authSecurity;
@@ -190,8 +190,8 @@ struct ConfigObject82 {
 	char mqttClientId[32];
 	char mqttPublishTopic[64];
 	char mqttSubscribeTopic[64];
-	char mqttUser[64];
-	char mqttPassword[64];
+	char mqttUser[128];
+	char mqttPassword[256];
 	uint8_t mqttPayloadFormat;
 	bool mqttSsl;
 	uint8_t authSecurity;
