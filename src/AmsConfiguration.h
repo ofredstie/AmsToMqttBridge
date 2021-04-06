@@ -41,8 +41,8 @@ struct MqttConfig {
 	char clientId[32];
 	char publishTopic[64];
 	char subscribeTopic[64];
-	char username[64];
-	char password[64];
+	char username[128];
+	char password[256];
 	uint8_t payloadFormat;
 	bool ssl;
 }; // 420
