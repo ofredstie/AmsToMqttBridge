@@ -552,7 +552,7 @@ void AmsConfiguration::loadTempSensors() {
 	int address = EEPROM_TEMP_CONFIG_ADDRESS;
 	int c = 0;
 	int storedCount = EEPROM.read(address++);
-	Serial.print("SEnsors: ");
+	Serial.print("Sensors: ");
 	Serial.println(storedCount);
 	if(storedCount > 0 && storedCount <= 32) {
 		for(int i = 0; i < storedCount; i++) {
