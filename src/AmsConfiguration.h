@@ -10,14 +10,14 @@
 
 #define CONFIG_SYSTEM_START 8
 #define CONFIG_WIFI_START 16
-#define CONFIG_MQTT_START 1024
-#define CONFIG_WEB_START 648
-#define CONFIG_METER_START 784
-#define CONFIG_DEBUG_START 824
-#define CONFIG_GPIO_START 832
-#define CONFIG_DOMOTICZ_START 856 
-#define CONFIG_NTP_START 872
-#define CONFIG_ENTSOE_START 944
+#define CONFIG_MQTT_START 224
+#define CONFIG_WEB_START 904
+#define CONFIG_METER_START 1040
+#define CONFIG_DEBUG_START 1080
+#define CONFIG_GPIO_START 1088
+#define CONFIG_DOMOTICZ_START 1112 
+#define CONFIG_NTP_START 1128
+#define CONFIG_ENTSOE_START 1200
 
 struct SystemConfig {
 	uint8_t boardType;
@@ -45,7 +45,7 @@ struct MqttConfig {
 	char password[256];
 	uint8_t payloadFormat;
 	bool ssl;
-}; // 420
+}; // 676
 
 struct WebConfig {
 	uint8_t security;
