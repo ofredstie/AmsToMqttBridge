@@ -84,7 +84,7 @@ struct GpioConfig {
 	int16_t vccOffset;
 	uint16_t vccMultiplier;
 	uint8_t vccBootLimit;
-}; // 16
+}; // 18
 
 struct DomoticzConfig {
 	uint16_t elidx;
@@ -173,7 +173,7 @@ struct ConfigObject83 {
 	char ntpServer[64];
 
 	uint8_t tempAnalogSensorPin;
-};
+}; // 1150
 
 struct ConfigObject82 {
 	uint8_t boardType;
@@ -227,13 +227,13 @@ struct ConfigObject82 {
 	uint16_t domoVL2IDX;
 	uint16_t domoVL3IDX;
 	uint16_t domoCL1IDX;
-};
+}; // 1040
 
 struct TempSensorConfig {
 	uint8_t address[8];
 	char name[16];
 	bool common;
-};
+}; // 25
 
 class AmsConfiguration {
 public:
