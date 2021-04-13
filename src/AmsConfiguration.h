@@ -3,7 +3,7 @@
 #include <EEPROM.h>
 #include "Arduino.h"
 
-#define EEPROM_SIZE 1024 * 3
+#define EEPROM_SIZE 1024 * 4
 #define EEPROM_CHECK_SUM 86 // Used to check if config is stored. Change if structure changes
 #define EEPROM_CONFIG_ADDRESS 0
 #define EEPROM_TEMP_CONFIG_ADDRESS 2048
