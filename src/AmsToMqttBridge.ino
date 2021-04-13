@@ -792,7 +792,7 @@ void MQTT_connect() {
 
 		secureClient = new WiFiClientSecure();
 		#if defined(ESP8266)
-		secureClient->setBufferSizes(512, 512);
+		secureClient->setBufferSizes(4096, 4096);
 		#endif
 
 		if(SPIFFS.begin()) {
